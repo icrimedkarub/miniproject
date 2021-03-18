@@ -45,14 +45,21 @@ function outputData(person) {
     row.classList.add('actor');
   }
   // Add a class to Austrians
-  if ((new RegExp(/austrian/gi)).test(person.profession)) {
+  if ((new RegExp(/austria/gi)).test(person.profession)) {
     row.classList.add('austrian');
   }
   // Add a class to Auto*
   if ((new RegExp(/author/gi)).test(person.profession)) {
     row.classList.add('auto');
   }
-
+  // Add a class to Musician
+  if ((new RegExp(/mus/gi)).test(person.profession) {
+    row.classList.add('Musicians');
+  }
+  // Add a class to Politicians
+  if ((new RegExp(/minister|presi/gi)).test(person.profession)) {
+    row.classList.add('Politicians')
+  }
 }
 
 // The below function will get called when the window finishes loading our data
