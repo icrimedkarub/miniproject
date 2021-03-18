@@ -54,11 +54,11 @@ function outputData(person) {
   }
   // Add a class to Musicians
   if ((new RegExp(/mus/gi)).test(person.profession) {
-    row.classList.add('Musicians');
+    row.classList.add('musicians');
   }
   // Add a class to Politicians
   if ((new RegExp(/minister|presi/gi)).test(person.profession)) {
-    row.classList.add('Politicians')
+    row.classList.add('politicians')
   }
 }
 
