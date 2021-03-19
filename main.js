@@ -60,7 +60,7 @@ function outputData(person) {
   if ((new RegExp(/minister|presi|tao|kim|dip/gi)).test(person.profession)) {
     row.classList.add('politicians')
   }
-  if ((new RegExp(/foo|box|ath|golf/gi)).test(person.profession)) {
+  if ((new RegExp(/foo|box|ath|golf|cyc|driv/gi)).test(person.profession)) {
     row.classList.add('sportsmen')
 
   }
