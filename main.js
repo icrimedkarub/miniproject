@@ -42,7 +42,7 @@ function outputData(person) {
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
   // Add a class to actors
   if ((new RegExp(/actor|actress/gi)).test(person.profession)) {
-    row.classList.add('actor');
+    row.classList.add('actors');
   }
   // Add a class to Austrians
   if ((new RegExp(/austria/gi)).test(person.profession)) {
@@ -57,7 +57,7 @@ function outputData(person) {
     row.classList.add('musicians');
   }
   // Add a class to Politicians
-  if ((new RegExp(/minister|presi|tao/gi)).test(person.profession)) {
+  if ((new RegExp(/minister|presi|tao|kim/gi)).test(person.profession)) {
     row.classList.add('politicians')
   }
 }
