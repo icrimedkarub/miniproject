@@ -78,7 +78,7 @@ window.onload = function() {
     // Loop through all of those rows (i.e.: <tr>...</tr> elements)
     for (var i = 1, length = tableRows.length; i < length; i++) {
       // If the button's value is reset show all table rows. "table-row" is here a CSS style attribute for visible rows!
-      if (this.value == 'reset') {
+      if (this.value == 'All') {
         tableRows[i].style.display = "table-row";
       // If the button's value (for example "austrian") is included in the CSS classes of the table row (for example <tr class="austrian actor">...</tr>) then show it
       } else if (tableRows[i].classList.contains(this.value)) {
