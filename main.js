@@ -49,7 +49,7 @@ function outputData(person) {
     row.classList.add('austrians');
   }
   // Add a class to Auto*
-  if ((new RegExp(/author|\b(writer)\b/gi)).test(person.profession)) {
+  if ((new RegExp(/author|\b(writer)\b|poet/gi)).test(person.profession)) {
     row.classList.add('authors');
   }
   // Add a class to Musicians
