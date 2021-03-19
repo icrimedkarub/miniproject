@@ -57,8 +57,12 @@ function outputData(person) {
     row.classList.add('musicians');
   }
   // Add a class to Politicians
-  if ((new RegExp(/minister|presi|tao|kim/gi)).test(person.profession)) {
+  if ((new RegExp(/minister|presi|tao|kim|dip/gi)).test(person.profession)) {
     row.classList.add('politicians')
+  }
+  if ((new RegExp(/foo|box|ath|golf/gi)).test(person.profession)) {
+    row.classList.add('sportsmen')
+
   }
 }
 
