@@ -2,13 +2,17 @@ body {
   padding: 0 30px 0 30px;
 }
 
+{
+  background-color: beige;
+}
+
 button {
   font-size: 16px;
   padding: 8px;
 }
 
 .redButton{
-  background-color: purple;
+  background-color: red;
 }
 .greenButton{
   background-color: lightgreen;
