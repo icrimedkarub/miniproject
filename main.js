@@ -45,15 +45,15 @@ function outputData(person) {
     row.classList.add('actors');
   }
   // Add a class to Austrians
-  if ((new RegExp(/austria/gi)).test(person.profession)) {
-    row.classList.add('austrians');
+  if ((new RegExp(/amer/gi)).test(person.profession)) {
+    row.classList.add('americans');
   }
   // Add a class to Auto*
   if ((new RegExp(/author|\b(writer)\b|poet/gi)).test(person.profession)) {
     row.classList.add('authors');
   }
   // Add a class to Musicians
-  if ((new RegExp(/mus|composer/gi)).test(person.profession)) {
+  if ((new RegExp(/mus|compo/gi)).test(person.profession)) {
     row.classList.add('musicians');
   }
   // Add a class to Politicians
@@ -78,7 +78,7 @@ window.onload = function() {
     // Loop through all of those rows (i.e.: <tr>...</tr> elements)
     for (var i = 1, length = tableRows.length; i < length; i++) {
       // If the button's value is reset show all table rows. "table-row" is here a CSS style attribute for visible rows!
-      if (this.value == 'all') {
+      if (this.value == 'reset') {
         tableRows[i].style.display = "table-row";
       // If the button's value (for example "austrian") is included in the CSS classes of the table row (for example <tr class="austrian actor">...</tr>) then show it
       } else if (tableRows[i].classList.contains(this.value)) {
