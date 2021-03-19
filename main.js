@@ -46,18 +46,18 @@ function outputData(person) {
   }
   // Add a class to Austrians
   if ((new RegExp(/austria/gi)).test(person.profession)) {
-    row.classList.add('austrian');
+    row.classList.add('austrians');
   }
   // Add a class to Auto*
-  if ((new RegExp(/author/gi)).test(person.profession)) {
-    row.classList.add('auto');
+  if ((new RegExp(/author|\b(writer)\b/gi)).test(person.profession)) {
+    row.classList.add('authors');
   }
   // Add a class to Musicians
   if ((new RegExp(/mus/gi)).test(person.profession)) {
     row.classList.add('musicians');
   }
   // Add a class to Politicians
-  if ((new RegExp(/minister|presi/gi)).test(person.profession)) {
+  if ((new RegExp(/minister|presi|tao/gi)).test(person.profession)) {
     row.classList.add('politicians')
   }
 }

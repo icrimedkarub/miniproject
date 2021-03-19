@@ -2,31 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>List of Deaths in 2011</title>
+    <title>Famous People Who died in 2011</title>
     <meta name="description" content="This is where you can describe what a page is for indexers and search engines">
     <meta name="Burak Demirci" content="Take some credit!">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
-    <h1>A list of some deaths in 2011</h1>
-    <p>This website uses a list of names extracted from Wikipedia.</p>
-    <p>The data which is fetched can be seen here: <a href="data/deaths.json" target="_blank">data/deaths.json</a></p>
-    <p>See the JavaScript code which fetches and outputs the data here: <a href="main.js" target="_blank">main.js</a></p>
-    <p>Please use the below buttons to interactively filter the displayed data.</p>
-    <button type="button" value="actor" class="redButton">Actors</button>
-    <button type="button" value="austrian" class="greenButton">Austrians</button>
-    <button type="button" value="auto" class="yellowButton">Auto*</button>
+    <h1>The Site is the List</h1>
+    <p>This website has been based on the information provided from Wikipedia.</p>
+    <p>The data itself is available here: <a href="data/deaths.json" target="_blank">data/deaths.json</a></p>
+    <p>The data on the website itself is available here: <a href="main.js" target="_blank">main.js</a></p>
+    <p>The buttons allow one to filter the data. To see the whole list, press "All".</p>
+    <button type="button" value="actors" class="redButton">Actors</button>
+    <button type="button" value="austrians" class="greenButton">Austrians</button>
+    <button type="button" value="authors" class="yellowButton">Authors</button>
     <button type="button" value="politicians" class="pinkButton">Politicians</button>
     <button type="button" value="musicians" class="orangeButton">Musicians</button>
-    <button type="reset" value="reset" class="blueButton">Reset</button>
+    <button type="reset" value="All" class="blueButton">All</button>
     <table id="persons-table">
       <tr class="table-headings">
         <th>Birth Year</th>
         <th>Name</th>
         <th>Profession</th>
         <th>Death Date</th>
-        <th>Height</th>
       </tr>
     </table>
   </body>
