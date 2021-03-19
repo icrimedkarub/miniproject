@@ -53,7 +53,7 @@ function outputData(person) {
     row.classList.add('authors');
   }
   // Add a class to Musicians
-  if ((new RegExp(/mus|compo/gi)).test(person.profession)) {
+  if ((new RegExp(/mus|compo|singer/gi)).test(person.profession)) {
     row.classList.add('musicians');
   }
   // Add a class to Politicians
